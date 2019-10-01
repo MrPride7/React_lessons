@@ -17,7 +17,7 @@ class Request extends Component {
   getPeople = () => {
 
     return (
-      fetch(`${URL}?client_id=${CLIENT_ID}&client_secret=${CLIENT_SECRET}&v=20180323&limit=1&ll=40.7243,-74.0018&query=coffee`)
+      fetch(`${URL}?client_id=${process.env.CLIENT_ID}&client_secret=${process.env.CLIENT_SECRET}&v=20180323&limit=1&ll=40.7243,-74.0018&query=coffee`)
         .then(resp => resp.json())
         .then(myJson => JSON.stringify(myJson))
         .then(data => this.getResponse(data))
