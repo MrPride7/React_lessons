@@ -1,13 +1,10 @@
 import React, { Component } from 'react';
-import Request from './components/component.request'
+import Request from './components/request/component.Request'
 
 class App extends Component {
   render() {
-    return <div>
-      <Request/>
-    </div>
+    return <Request/>
   }
-
 }
 
 export default App;
