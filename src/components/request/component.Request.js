@@ -2,9 +2,11 @@ import React, {Component} from 'react';
 import ApiCatcher from '../ApiCatcher/component.ApiCatcher'
 import './request.css'
 
-const URL = 'https://api.foursquare.com/v2/venues/explore';
-const CLIENT_ID = 'ANKXZLBEFXHPMRS2QGOPPB5ICZAIJZOVOFRURYIS3ECOSIXC';
-const CLIENT_SECRET = 'QNQDRHW52SSGBKVEBXVREHZUHEGNQUE3JMPCBEWXNSN32OUC';
+require('dotenv').config();
+const token = process.env.TOKEN;
+import CLIENT_ID from token;
+import CLIENT_SECRET from token;
+
 
 class Request extends Component {
 
