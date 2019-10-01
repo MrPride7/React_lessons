@@ -1,3 +1,6 @@
+require('dotenv').config();
+const token = process.env.TOKEN;
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';

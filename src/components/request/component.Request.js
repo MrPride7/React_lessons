@@ -2,12 +2,6 @@ import React, {Component} from 'react';
 import ApiCatcher from '../ApiCatcher/component.ApiCatcher'
 import './request.css'
 
-require('dotenv').config();
-const token = process.env.TOKEN;
-import CLIENT_ID from token;
-import CLIENT_SECRET from token;
-
-
 class Request extends Component {
 
   state = {
